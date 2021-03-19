@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Retrofit.iml" filepath="$PROJECT_DIR$/Retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kfly/kfly.iml" filepath="$PROJECT_DIR$/kfly/kfly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/partern/partern.iml" filepath="$PROJECT_DIR$/partern/partern.iml" />
+    </modules>
+  </component>
+</project>
