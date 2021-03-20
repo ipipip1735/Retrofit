@@ -53,7 +53,7 @@ public class AfterSaleInfo {
     String dispatch_time = ""; //2021-03-08 10:05
     String create_time = ""; //2021-03-08 10:04
     String streetNumber = ""; //测试
-    String product_criteria = ""; //1
+    String product_criteria = ""; //1=通, 2=精
     String operator_account = ""; //13995567535
     String hotel_name = ""; //测试门店720
     String operator_user_name = ""; //吴玲

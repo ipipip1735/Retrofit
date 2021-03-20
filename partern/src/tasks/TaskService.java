@@ -1,7 +1,7 @@
 package tasks;
 
 import entities.AfterSaleInfoData;
-import entities.Response;
+import entities.BaseResponse;
 import io.reactivex.Observable;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
@@ -28,9 +28,9 @@ public interface TaskService {
      * @return
      */
     @POST("tdj-partner/partner/afterSalesApplication/getafterSalesTask")
-    Call<Response<AfterSaleInfoData>> getafterSalesTask(@Body RequestBody body);
+    Call<BaseResponse<AfterSaleInfoData>> getafterSalesTaskWithCall(@Body RequestBody body);
     @POST("tdj-partner/partner/afterSalesApplication/getafterSalesTask")
-    Observable<Response<AfterSaleInfoData>> getafterSalesTaskWithRx(@Body RequestBody body);
+    Observable<BaseResponse<AfterSaleInfoData>> getafterSalesTask(@Body RequestBody body);
 
 
 

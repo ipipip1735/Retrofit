@@ -2,8 +2,6 @@ package tasks;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import entities.AfterSaleInfoData;
-import entities.Response;
 import okhttp3.*;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
@@ -60,7 +58,7 @@ public class Task {
     private void getafterSalesTask() {
 
 
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>();
         map.put("userId", 258787);
         map.put("tab", 0);
         String json = gson.toJson(map);
@@ -97,7 +95,7 @@ public class Task {
 
         //方式二:使用RxJava
         retrofit.create(TaskService.class)
-                .getafterSalesTaskWithRx(requestBody)
+                .getafterSalesTask(requestBody)
                 .subscribe(System.out::println, Throwable::printStackTrace);
 
     }

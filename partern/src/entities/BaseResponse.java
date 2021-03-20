@@ -3,7 +3,7 @@ package entities;
 /**
  * Created by wyh on 2021/3/18.
  */
-public class Response<T> {
+public class BaseResponse<T> {
 
     public int err = 0;
     public T data = null;
